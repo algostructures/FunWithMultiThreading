@@ -1,6 +1,6 @@
-package com.multithreading.ProducerConsumer.raceConndition;
+package com.multithreading.ProducerConsumer.raceCondition;
 
-public class ProducerConsumer {
+public class ProducerConsumerRaceCondition {
 
     private static int[] buffer;
     private static int count;
