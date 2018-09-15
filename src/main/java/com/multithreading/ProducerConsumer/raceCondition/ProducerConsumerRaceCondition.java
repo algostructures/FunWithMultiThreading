@@ -5,7 +5,7 @@ public class ProducerConsumerRaceCondition {
     private static int[] buffer;
     private static int count;
 
-    static class Producer {
+    private static class Producer {
 
         private void produce() {
             while (isFull(buffer)) {}
@@ -23,11 +23,11 @@ public class ProducerConsumerRaceCondition {
         }
     }
 
-    static boolean isEmpty(int[] buffer) {
+    private static boolean isEmpty(int[] buffer) {
         return count == 0;
     }
 
-    static boolean isFull(int[] buffer) {
+    private static boolean isFull(int[] buffer) {
         return count == buffer.length;
     }
 

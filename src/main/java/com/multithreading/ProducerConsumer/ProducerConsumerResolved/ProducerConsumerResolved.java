@@ -7,7 +7,7 @@ public class ProducerConsumerResolved {
     private static int[] buffer;
     private static int count;
 
-    static class Producer {
+    private static class Producer {
 
         private void produce() throws InterruptedException {
             synchronized (lock) {
@@ -35,11 +35,11 @@ public class ProducerConsumerResolved {
         }
     }
 
-    static boolean isEmpty(int[] buffer) {
+    private static boolean isEmpty(int[] buffer) {
         return count == 0;
     }
 
-    static boolean isFull(int[] buffer) {
+    private static boolean isFull(int[] buffer) {
         return count == buffer.length;
     }
 
