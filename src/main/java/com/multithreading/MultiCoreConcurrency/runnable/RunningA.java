@@ -1,6 +1,7 @@
 package com.multithreading.MultiCoreConcurrency.runnable;
 
-import org.paumard.runnable.model.A;
+
+import com.multithreading.Deadlock.A;
 
 public class RunningA {
 

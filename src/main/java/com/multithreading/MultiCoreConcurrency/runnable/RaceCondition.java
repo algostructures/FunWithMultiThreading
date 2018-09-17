@@ -1,6 +1,7 @@
 package com.multithreading.MultiCoreConcurrency.runnable;
 
-import org.paumard.runnable.model.LongWrapper;
+
+import com.multithreading.MultiCoreConcurrency.runnable.model.LongWrapper;
 
 class RaceCondition {
 
