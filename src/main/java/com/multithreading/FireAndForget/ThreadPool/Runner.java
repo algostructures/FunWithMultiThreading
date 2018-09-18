@@ -4,7 +4,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class Runner {
-    static ExecutorService pool = Executors.newCachedThreadPool();
+    private static ExecutorService pool = Executors.newCachedThreadPool();
     public static void main(String args[]) {
 
         long startTimeUnPool = System.nanoTime();
