@@ -33,15 +33,13 @@ public class App {
         ExecutorService executorService = Executors.newFixedThreadPool(2);
 
         IntStream.range(0,5).forEach(i-> executorService.submit(new Processor(i)));
-
-
         executorService.shutdown();
 
         System.out.println("All Tasks Submitted.");
 
         try{
             executorService.awaitTermination(1, TimeUnit.DAYS);
-        } catch (Exception e) {
+        } catch (Exception ignored) {
 
         }
         System.out.println("All Tasks Completed");
