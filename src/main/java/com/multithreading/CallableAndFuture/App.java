@@ -33,9 +33,7 @@ public class App {
 
         try {
             System.out.println("Result is "+ future.get());
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
+        } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
     }
